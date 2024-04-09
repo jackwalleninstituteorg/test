@@ -1,4 +1,4 @@
-# hash:sha256:4f74b27590d5c0a5a0a48dcf4f149b381898c441d0c2256c29642e3b745dc874
+# hash:sha256:cb7dcdfd6e5c7c4a1b3cd087059b69832730f79289348f75fe78fe9818bbb928
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
@@ -24,4 +24,4 @@ RUN pip install -U --no-cache-dir \
     scikit-learn==1.2.2 \
     shapely==2.0.1 \
     zarr==2.17.0 \
-    -e git+https://github.com/AllenNeuralDynamics/thalamus-merfish-analysis#egg=thalamus-merfish-analysis
+    -e git+https://github.com/AllenNeuralDynamics/thalamus-merfish-analysis@bc5d67b29f2e141f9791eab42fb49cfe24df35c1#egg=thalamus-merfish-analysis
